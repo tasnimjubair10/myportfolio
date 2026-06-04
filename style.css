@@ -1,0 +1,284 @@
+/* Clean Typography Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #faf9f6; /* Warm off-white background */
+    color: #1a1a1a; /* Soft charcoal text */
+    line-height: 1.5;
+}
+
+/* Structural Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+}
+
+/* Minimalist Top Nav */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(250, 249, 246, 0.9);
+    backdrop-filter: blur(8px);
+    z-index: 100;
+}
+
+.nav-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+.brand-logo {
+    font-weight: 700;
+    text-decoration: none;
+    color: #1a1a1a;
+    letter-spacing: -0.05em;
+    font-size: 1.2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    margin-left: 2rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #1a1a1a;
+}
+
+/* Left-Aligned Hero */
+.main-hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding-top: 10rem;
+}
+
+.subtitle-tag {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #ff5722; /* Playful accent color */
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.intro-box h1 {
+    font-size: 3.2rem;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+}
+
+.intro-box p {
+    font-size: 1.25rem;
+    color: #555;
+    max-width: 600px;
+    margin-bottom: 2.5rem;
+}
+
+.primary-link {
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 4px;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.primary-link:hover {
+    color: #ff5722;
+    border-color: #ff5722;
+}
+
+/* Split-Screen Skills Row */
+.stack-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.split-left {
+    flex: 1 1 300px;
+}
+
+.split-right {
+    flex: 2 1 450px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+}
+
+.section-desc {
+    color: #666;
+    font-size: 1.05rem;
+}
+
+.tech-row {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tech-row:first-child {
+    padding-top: 0;
+}
+
+.tech-category {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #888;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.tech-row p {
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+/* Vertical Row Projects List */
+.work-layout {
+    border-top: 1px solid #e0e0e0;
+}
+
+.text-left {
+    margin-bottom: 2rem;
+}
+
+.vertical-project-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-project-item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    align-items: flex-start;
+}
+
+.proj-meta {
+    flex: 0 0 120px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.proj-num {
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.proj-main-content {
+    flex: 1 1 400px;
+    padding-right: 2rem;
+}
+
+.proj-main-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.proj-main-content p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.proj-tech-tags span {
+    font-size: 0.8rem;
+    background-color: #ededed;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    color: #444;
+}
+
+.proj-action {
+    flex: 0 0 100px;
+    text-align: right;
+    padding-top: 0.5rem;
+}
+
+.text-btn {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.text-btn:hover {
+    text-decoration: underline;
+}
+
+/* Large Block Call to Action */
+.connect-layout {
+    border-top: 1px solid #e0e0e0;
+}
+
+.connect-inner h2 {
+    font-size: 2.8rem;
+    letter-spacing: -0.03em;
+    margin-bottom: 1rem;
+}
+
+.connect-inner p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 3rem;
+    max-width: 600px;
+}
+
+.footer-links a {
+    font-size: 1.3rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    margin-right: 2.5rem;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.footer-links a:hover {
+    border-color: #1a1a1a;
+}
+
+/* Mini Footer */
+.mini-footer {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Mobile Fixes */
+@media (max-width: 768px) {
+    .intro-box h1 { font-size: 2.4rem; }
+    .row-project-item { flex-direction: column; gap: 1rem; }
+    .proj-action { text-align: left; }
+    .footer-links a { display: block; margin-bottom: 1rem; }
+}
